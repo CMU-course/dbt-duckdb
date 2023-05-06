@@ -1,0 +1,317 @@
+version: 2
+
+sources:
+  - name: main
+    description: ""
+    tables:
+      - name: bike_data
+        description: ""
+        columns:
+          - name: tripduration
+            description: ""
+          - name: starttime
+            description: ""
+          - name: stoptime
+            description: ""
+          - name: start station id
+            description: ""
+          - name: start station name
+            description: ""
+          - name: start station latitude
+            description: ""
+          - name: start station longitude
+            description: ""
+          - name: end station id
+            description: ""
+          - name: end station name
+            description: ""
+          - name: end station latitude
+            description: ""
+          - name: end station longitude
+            description: ""
+          - name: bikeid
+            description: ""
+          - name: usertype
+            description: ""
+          - name: birth year
+            description: ""
+          - name: gender
+            description: ""
+          - name: ride_id
+            description: ""
+          - name: rideable_type
+            description: ""
+          - name: started_at
+            description: ""
+          - name: ended_at
+            description: ""
+          - name: start_station_name
+            description: ""
+          - name: start_station_id
+            description: ""
+          - name: end_station_name
+            description: ""
+          - name: end_station_id
+            description: ""
+          - name: start_lat
+            description: ""
+          - name: start_lng
+            description: ""
+          - name: end_lat
+            description: ""
+          - name: end_lng
+            description: ""
+          - name: member_casual
+            description: ""
+          - name: filename
+            description: ""
+
+      - name: central_park_weather
+        description: ""
+        columns:
+          - name: station
+            description: ""
+          - name: name
+            description: ""
+          - name: date
+            description: ""
+          - name: awnd
+            description: ""
+          - name: prcp
+            description: ""
+          - name: snow
+            description: ""
+          - name: snwd
+            description: ""
+          - name: tmax
+            description: ""
+          - name: tmin
+            description: ""
+          - name: filename
+            description: ""
+
+      - name: daily_citi_bike_trip_counts_and_weather
+        description: ""
+        columns:
+          - name: date
+            description: ""
+          - name: trips
+            description: ""
+          - name: precipitation
+            description: ""
+          - name: snow_depth
+            description: ""
+          - name: snowfall
+            description: ""
+          - name: max_temperature
+            description: ""
+          - name: min_temperature
+            description: ""
+          - name: average_wind_speed
+            description: ""
+          - name: dow
+            description: ""
+          - name: year
+            description: ""
+          - name: month
+            description: ""
+          - name: holiday
+            description: ""
+          - name: stations_in_service
+            description: ""
+          - name: weekday
+            description: ""
+          - name: weekday_non_holiday
+            description: ""
+          - name: filename
+            description: ""
+
+      - name: fhv_bases
+        description: ""
+        columns:
+          - name: column0
+            description: ""
+          - name: column1
+            description: ""
+          - name: column2
+            description: ""
+          - name: column3
+            description: ""
+          - name: filename
+            description: ""
+
+      - name: fhv_tripdata
+        description: ""
+        columns:
+          - name: dispatching_base_num
+            description: ""
+          - name: pickup_datetime
+            description: ""
+          - name: dropoff_datetime
+            description: ""
+          - name: pulocationid
+            description: ""
+          - name: dolocationid
+            description: ""
+          - name: sr_flag
+            description: ""
+          - name: affiliated_base_number
+            description: ""
+          - name: filename
+            description: ""
+
+      - name: fhvhv_tripdata
+        description: ""
+        columns:
+          - name: hvfhs_license_num
+            description: ""
+          - name: dispatching_base_num
+            description: ""
+          - name: originating_base_num
+            description: ""
+          - name: request_datetime
+            description: ""
+          - name: on_scene_datetime
+            description: ""
+          - name: pickup_datetime
+            description: ""
+          - name: dropoff_datetime
+            description: ""
+          - name: pulocationid
+            description: ""
+          - name: dolocationid
+            description: ""
+          - name: trip_miles
+            description: ""
+          - name: trip_time
+            description: ""
+          - name: base_passenger_fare
+            description: ""
+          - name: tolls
+            description: ""
+          - name: bcf
+            description: ""
+          - name: sales_tax
+            description: ""
+          - name: congestion_surcharge
+            description: ""
+          - name: airport_fee
+            description: ""
+          - name: tips
+            description: ""
+          - name: driver_pay
+            description: ""
+          - name: shared_request_flag
+            description: ""
+          - name: shared_match_flag
+            description: ""
+          - name: access_a_ride_flag
+            description: ""
+          - name: wav_request_flag
+            description: ""
+          - name: wav_match_flag
+            description: ""
+          - name: filename
+            description: ""
+
+      - name: green_tripdata
+        description: ""
+        columns:
+          - name: vendorid
+            description: ""
+          - name: lpep_pickup_datetime
+            description: ""
+          - name: lpep_dropoff_datetime
+            description: ""
+          - name: store_and_fwd_flag
+            description: ""
+          - name: ratecodeid
+            description: ""
+          - name: pulocationid
+            description: ""
+          - name: dolocationid
+            description: ""
+          - name: passenger_count
+            description: ""
+          - name: trip_distance
+            description: ""
+          - name: fare_amount
+            description: ""
+          - name: extra
+            description: ""
+          - name: mta_tax
+            description: ""
+          - name: tip_amount
+            description: ""
+          - name: tolls_amount
+            description: ""
+          - name: ehail_fee
+            description: ""
+          - name: improvement_surcharge
+            description: ""
+          - name: total_amount
+            description: ""
+          - name: payment_type
+            description: ""
+          - name: trip_type
+            description: ""
+          - name: congestion_surcharge
+            description: ""
+          - name: filename
+            description: ""
+
+      - name: my_first_dbt_model
+        description: ""
+        columns:
+          - name: id
+            description: ""
+
+      - name: my_second_dbt_model
+        description: ""
+        columns:
+          - name: id
+            description: ""
+
+      - name: yellow_tripdata
+        description: ""
+        columns:
+          - name: vendorid
+            description: ""
+          - name: tpep_pickup_datetime
+            description: ""
+          - name: tpep_dropoff_datetime
+            description: ""
+          - name: passenger_count
+            description: ""
+          - name: trip_distance
+            description: ""
+          - name: ratecodeid
+            description: ""
+          - name: store_and_fwd_flag
+            description: ""
+          - name: pulocationid
+            description: ""
+          - name: dolocationid
+            description: ""
+          - name: payment_type
+            description: ""
+          - name: fare_amount
+            description: ""
+          - name: extra
+            description: ""
+          - name: mta_tax
+            description: ""
+          - name: tip_amount
+            description: ""
+          - name: tolls_amount
+            description: ""
+          - name: improvement_surcharge
+            description: ""
+          - name: total_amount
+            description: ""
+          - name: congestion_surcharge
+            description: ""
+          - name: airport_fee
+            description: ""
+          - name: filename
+            description: ""
