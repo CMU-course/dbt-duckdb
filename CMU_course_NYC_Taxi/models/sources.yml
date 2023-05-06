@@ -260,18 +260,6 @@ sources:
           - name: filename
             description: ""
 
-      - name: my_first_dbt_model
-        description: ""
-        columns:
-          - name: id
-            description: ""
-
-      - name: my_second_dbt_model
-        description: ""
-        columns:
-          - name: id
-            description: ""
-
       - name: yellow_tripdata
         description: ""
         columns:
