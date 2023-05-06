@@ -33,5 +33,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   CMU_course_NYC_Taxi:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    staging:
+      +schema: staging
       +materialized: view
