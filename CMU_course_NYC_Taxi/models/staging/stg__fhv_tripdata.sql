@@ -12,7 +12,7 @@ renamed as (
         dropoff_datetime,
         pulocationid,
         dolocationid,
-        sr_flag,
+        --sr_flag, always null so chuck it
         affiliated_base_number,
         filename
 

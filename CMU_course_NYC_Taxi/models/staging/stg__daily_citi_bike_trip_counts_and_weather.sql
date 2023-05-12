@@ -17,7 +17,7 @@ renamed as (
         average_wind_speed::double as average_wind_speed,
         dow::int as dow,
         year::int as year,
-        month::month as month,
+        month::int as month,
         holiday::bool as holiday,
         stations_in_service::int as stations_in_service,
         weekday::bool as weekday,
