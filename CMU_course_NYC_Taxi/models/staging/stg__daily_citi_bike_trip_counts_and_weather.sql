@@ -7,21 +7,21 @@ with source as (
 renamed as (
 
     select
-        date,
-        trips,
-        precipitation,
-        snow_depth,
-        snowfall,
-        max_temperature,
-        min_temperature,
-        average_wind_speed,
-        dow,
-        year,
-        month,
-        holiday,
-        stations_in_service,
-        weekday,
-        weekday_non_holiday,
+        date::date as date,
+        trips::int as trips,
+        precipitation::double as precipitation,
+        snow_depth::double as snow_depth,
+        snowfall::double as snowfall,
+        max_temperature::double as max_temperature,
+        min_temperature::double as min_temperature,
+        average_wind_speed::double as average_wind_speed,
+        dow::int as dow,
+        year::int as year,
+        month::month as month,
+        holiday::bool as holiday,
+        stations_in_service::int as stations_in_service,
+        weekday::bool as weekday,
+        weekday_non_holiday::bool as weekday_non_holiday,
         filename
 
     from source
